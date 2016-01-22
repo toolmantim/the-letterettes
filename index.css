@@ -1,0 +1,84 @@
+:root {
+
+  font: 18px 'Avenir Next', Avenir, sans-serif;
+  color: #231f20;
+  background-color: #f599b1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 50px;
+  width: 100%;
+}
+
+.responsive-image {
+  position: relative;
+  width: 100%;
+}
+
+.responsive-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.call-to-actions {
+  margin-top: 0;
+}
+
+.call-to-actions a, .call-to-actions a:visited {
+  display: inline-block;
+  width: 5.5em;
+  color: white;
+  border-bottom: 1px dashed currentColor;
+  text-decoration: none;
+  margin: 0 .5em;
+  line-height: 1.8;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+.call-to-actions a:hover, .call-to-actions a:active {
+  color: #231f20;
+}
+
+@media (max-width: 850px) {
+  .logo { margin-bottom: 20px; }
+}
+
+@media (max-width: 500px) {
+  .call-to-actions { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  .call-to-actions span { margin: .5em 0; }
+  .wrapper { padding: 15px; }
+}

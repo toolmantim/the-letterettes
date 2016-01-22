@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Letterettes — Live Event Lettering</title>
+    <link rel="stylesheet" href="index.css">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="logo">
+        <div class="responsive-image" style="padding-bottom: 30.72%">
+          <img src="images/logo.svg" alt="The Letterettes" class="logo__image">
+        </div>
+      </h1>
+      <p class="call-to-actions">
+        <span><a href="mailto:hello@THISDOMAIN">Book Us</a></span>
+        <span><a href="https://instagram.com/theletterettes">Follow Us</a></span>
+        <span><a href="https://www.eventbrite.com.au/e/letters-of-love-brush-script-workshop-with-the-letterettes-tickets-20883299511">Workshops</a></span>
+      </p>
+    </div>
+    <script>
+      (function(links) {
+        for (var i = 0; i < links.length; i++)
+          links[i].href = links[i].href.replace("THISDOMAIN", window.location.host);
+      })(document.getElementsByTagName("a"));
+    </script>
+  </body>
+</html>
