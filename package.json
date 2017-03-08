@@ -5,5 +5,9 @@
     "autoprefixer": "^6.3.1",
     "postcss-cli": "^2.4.0",
     "postcss-cssnext": "^2.4.0"
+  },
+  "scripts": {
+    "build": "postcss --use postcss-cssnext source/*.css -d .",
+    "watch": "postcss --watch --use postcss-cssnext source/*.css -d ."
   }
 }

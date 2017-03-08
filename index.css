@@ -17,15 +17,12 @@
 
 body {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
@@ -73,12 +70,25 @@ body {
   color: #231f20;
 }
 
+.bio p {
+  max-width: 20em;
+  margin: 2em auto;
+}
+
+.bio a {
+  color: currentColor;
+}
+
+.bio a:hover, .bio a:active {
+  color: #231f20;
+}
+
 @media (max-width: 850px) {
   .logo { margin-bottom: 20px; }
 }
 
 @media (max-width: 500px) {
-  .call-to-actions { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  .call-to-actions { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .call-to-actions span { margin: .5em 0; }
   .wrapper { padding: 15px; }
 }

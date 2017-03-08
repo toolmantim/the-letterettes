@@ -65,6 +65,19 @@ body {
   color: var(--dark-brown);
 }
 
+.bio p {
+  max-width: 20em;
+  margin: 2em auto;
+}
+
+.bio a {
+  color: currentColor;
+}
+
+.bio a:hover, .bio a:active {
+  color: var(--dark-brown);
+}
+
 @media (max-width: 850px) {
   .logo { margin-bottom: 20px; }
 }
