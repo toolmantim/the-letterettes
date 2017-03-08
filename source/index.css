@@ -25,7 +25,7 @@ body {
 }
 
 .wrapper {
-  padding: 50px;
+  padding: 60px;
   width: 100%;
 }
 
@@ -43,8 +43,8 @@ body {
 }
 
 .logo {
-  max-width: 900px;
-  margin: 0 auto 10px auto;
+  max-width: 800px;
+  margin: 0 auto 15px auto;
 }
 
 .call-to-actions {
@@ -83,7 +83,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  .call-to-actions { display: flex; flex-direction: column; }
+  .call-to-actions { display: flex; flex-direction: column; font-size: 1.25em; }
   .call-to-actions span { margin: .5em 0; }
-  .wrapper { padding: 15px; }
+  .wrapper { padding: 60px 15px; }
 }
