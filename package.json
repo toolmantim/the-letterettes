@@ -2,12 +2,12 @@
   "name": "theletterettes",
   "version": "1.0.0",
   "devDependencies": {
-    "autoprefixer": "^6.3.1",
-    "postcss-cli": "^2.4.0",
-    "postcss-cssnext": "^2.4.0"
+    "autoprefixer": "^7.2.5",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.1.0"
   },
   "scripts": {
-    "build": "postcss --use postcss-cssnext source/*.css -d .",
-    "watch": "postcss --watch --use postcss-cssnext source/*.css -d ."
+    "build": "postcss source/*.css --use postcss-cssnext --dir .",
+    "watch": "postcss source/*.css --use postcss-cssnext --dir . --watch"
   }
 }

@@ -43,12 +43,13 @@ body {
 }
 
 .logo {
-  max-width: 800px;
-  margin: 0 auto 15px auto;
+  max-width: 600px;
+  margin: 20px auto 40px auto;
 }
 
 .call-to-actions {
   margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .call-to-actions a, .call-to-actions a:visited {
